@@ -16,7 +16,7 @@ const DecorativeObjects = ({ products }) => {
 export default DecorativeObjects
 
 export async function getServerSideProps(context) {
-  const products = await fetch("http://localhost:3000/api/products/decorobjects")
+  const products = await fetch(`${process.env.HOST}/api/products/decorobjects`)
     .then(res => res.json());
 
   return {
