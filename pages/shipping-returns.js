@@ -7,7 +7,7 @@ const ShippingReturns = () => {
     <div className={styles.container}>
       <Header />
 
-      <main class={styles.main}>
+      <main className={styles.main}>
         <h1 className={styles.heading}>Shipping + Returns</h1>
 
         <h2 className={styles.subheading}>Shipping</h2>

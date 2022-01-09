@@ -18,6 +18,7 @@ const Header = () => {
           src="http://links.israelb.xyz/louphira-store/louphira_logo_transparent.png" 
           width={250}
           height={55}
+          alt=""
           onClick={() => router.push('/')}
         />
       </div>

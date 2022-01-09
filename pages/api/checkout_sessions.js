@@ -1,6 +1,6 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-export default async (req, res) => {
+export default async function handler(req, res) {
   const { cart } = req.body;
 
   // console.log(cart);

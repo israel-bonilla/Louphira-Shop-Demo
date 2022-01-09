@@ -32,7 +32,7 @@ const CartItem = ({ id, title, image, price, qty }) => {
   return (
     <div className={styles.container}>
       <div>
-        <Image src={image} width={400} height={400} layout="responsive" objectFit="contain" />
+        <Image src={image} width={400} height={400} layout="responsive" objectFit="contain" alt="" />
       </div>
       <div className={styles.info}>
         <h4><span style={{ fontWeight: 600 }}>({qty})</span>{" "}{title}</h4>
