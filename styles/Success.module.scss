@@ -1,0 +1,14 @@
+.container {
+  background-color: whitesmoke;
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  color: rgb(0, 228, 171);
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}

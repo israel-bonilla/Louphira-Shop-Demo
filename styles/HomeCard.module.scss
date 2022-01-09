@@ -1,0 +1,41 @@
+.container {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.title {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-size: 3.5vw;
+  pointer-events: none;
+}
+
+.image {
+  &:hover {
+    animation-name: image-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes image-hover {
+  from {
+  }
+  to {
+    webkit-filter: blur(3px);
+    filter: brightness(80%) blur(3px);
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    font-size: 7vw;
+  }
+}

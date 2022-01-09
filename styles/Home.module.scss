@@ -1,0 +1,19 @@
+.container {
+  background-color: whitesmoke;
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 550px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

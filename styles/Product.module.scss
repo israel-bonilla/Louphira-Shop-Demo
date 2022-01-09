@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+
+  &:hover {
+    .image {
+      animation-name: hover-product;
+      animation-duration: 0.3s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes hover-product {
+  from {
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  span {
+    color: rgb(101, 185, 238);
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  button {
+    border: none;
+    padding: 5px;
+    background-color: lightslategray;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lightskyblue;
+    }
+  }
+}

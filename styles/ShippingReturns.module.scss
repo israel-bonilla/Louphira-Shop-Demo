@@ -1,0 +1,44 @@
+.container {
+  background-color: whitesmoke;
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-self: center;
+}
+
+.heading {
+  margin: 20px 0;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  align-self: center;
+}
+
+.subheading {
+  margin: 20px 0;
+  font-size: 17px;
+  color: gray;
+  letter-spacing: 1px;
+  align-self: center;
+}
+
+.info {
+  align-self: center;
+  margin: 20px 0;
+  width: 90%;
+  text-align: center;
+  color: gray;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.7em;
+}

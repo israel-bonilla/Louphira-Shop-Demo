@@ -1,0 +1,68 @@
+.container {
+  background-color: whitesmoke;
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  padding: 15px 20px;
+  font-weight: 300;
+}
+
+.message {
+  padding: 15px 20px;
+  font-weight: 300;
+  color: gray;
+  letter-spacing: 1px;
+
+  span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.checkoutContainer {
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.checkoutRight {
+  width: 150px;
+  min-height: 50px;
+  max-height: 120px;
+  border: 1px solid gray;
+  background-color: white;
+  font-size: 14px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  button {
+    border: 2px solid black;
+    font-weight: 600;
+    background-color: lightgoldenrodyellow;
+    padding: 10px 5px;
+    cursor: pointer;
+  }
+}
+
+.subtotal {
+  padding: 10px;
+}
+
+.subtotalPrice {
+  font-weight: 600;
+}
+
+.cart {
+  flex: 1;
+}
