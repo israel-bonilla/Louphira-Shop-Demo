@@ -16,7 +16,8 @@ const DecorativeObjects = ({ products }) => {
 export default DecorativeObjects
 
 export async function getServerSideProps(context) {
-  const products = await fetch(`${process.env.HOST}/api/products/decorobjects`)
+  // const products = await fetch(`${process.env.HOST}/api/products/decorobjects`)
+  const products = await fetch("http://links.israelb.xyz/louphira-store/api/decorobjs.json")
     .then(res => res.json());
 
   return {

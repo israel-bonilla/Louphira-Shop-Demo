@@ -4,10 +4,18 @@
   right: 0;
   margin: 15px;
   z-index: 100;
-  background-color: rgb(129, 236, 129);
+  background-color: rgb(39, 240, 39);
   color: white;
   padding: 15px 20px;
   font-weight: 600;
-  border-radius: 5px;
-  border: 1px solid rgb(0, 189, 0);
+  border-radius: 3px;
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  padding-right: 5px;
 }

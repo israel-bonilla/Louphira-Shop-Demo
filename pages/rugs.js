@@ -16,7 +16,8 @@ const Rugs = ({ products }) => {
 export default Rugs
 
 export async function getServerSideProps(context) {
-  const products = await fetch(`${process.env.HOST}/api/products/rugs`)
+  // const products = await fetch(`${process.env.HOST}/api/products/rugs`)
+  const products = await fetch("http://links.israelb.xyz/louphira-store/api/rugs.json")
     .then(res => res.json());
 
   return {

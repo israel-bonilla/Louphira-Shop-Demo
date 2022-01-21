@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { alertsState } from '../atoms/alertAtom';
 import styles from '../styles/Alert.module.scss'
+import { CheckCircleIcon } from '@heroicons/react/solid';
 
 const Alert = () => {
   const [alert, setAlert] = useRecoilState(alertsState);
@@ -18,6 +19,7 @@ const Alert = () => {
     <>
       {alert && (
         <div className={styles.container}>
+          <CheckCircleIcon className={styles.icon} />
           <span>Item(s) added to Cart</span>
         </div>
       )}
