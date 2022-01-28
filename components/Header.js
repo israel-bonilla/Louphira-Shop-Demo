@@ -15,7 +15,7 @@ const Header = () => {
 
       <div className={styles.logo}>
         <Image
-          src="http://links.israelb.xyz/louphira-store/louphira_logo_transparent.png" 
+          src="http://links.israelb.xyz/louphira-store/logo.webp" 
           width={250}
           height={55}
           alt=""
