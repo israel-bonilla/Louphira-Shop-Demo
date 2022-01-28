@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import HomeCard from '../components/HomeCard'
@@ -20,7 +19,7 @@ export default function Home() {
         <HomeCard title="Shop Vintage Rugs" image="http://links.israelb.xyz/louphira-store/rugs.png" link="rugs" />
         <HomeCard title="Shop Decorative Objects" image="http://links.israelb.xyz/louphira-store/decor.png" link="decorativeobjects" />
         {[4, 3, 5, 6, 2, 1].map(card => (
-          <HomeCard key={card} title="" link="" image={`http://links.israelb.xyz/louphira-store/home-img/${card}.png`} />
+          <HomeCard key={card} title="" link="" image={`http://links.israelb.xyz/louphira-store/home-img/${card}.webp`} />
         ))}
       </main>
 
