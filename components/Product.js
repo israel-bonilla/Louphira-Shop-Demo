@@ -34,7 +34,8 @@ const Product = ({ id, image, price, title }) => {
   return (
     <div className={styles.container}>
       <div className={styles.image}>
-        <Image src={image} width={400} height={400} layout="responsive" objectFit="contain" alt="" />
+        {/* <Image src={image} width={400} height={400} layout="responsive" objectFit="contain" alt="" /> */}
+        <img src={image} alt="" />
       </div>
       <div className={styles.text}>
         <h5>{title}</h5>
