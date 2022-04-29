@@ -11,15 +11,19 @@ const HomeCard = ({ title, image, link }) => {
       onClick={() => router.push(link)}
     >
       <div className={styles.imageContainer}>
-        <Image
+        <img 
+          className={styles.image}
+          src={image}
+          alt=""
+        />
+        {/* <Image
           className={styles.image}
           src={image}
           width={856}
           height={650}
           alt=""
           layout="responsive"
-          
-        />
+        /> */}
       </div>
       <h1 className={styles.title}>{title}</h1>
     </div>
