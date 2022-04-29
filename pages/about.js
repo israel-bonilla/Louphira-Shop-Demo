@@ -18,7 +18,7 @@ const About = () => {
         </div>
         <div>
           {[3, 4, 5].map(card => (
-            <HomeCard key={card} title="" link="" image={`http://links.israelb.xyz/louphira-store/home-img/${card}.png`} />
+            <HomeCard key={card} title="" link="" image={`http://links.israelb.xyz/louphira-store/home-img/${card}.webp`} />
           ))}
         </div>
       </main>
